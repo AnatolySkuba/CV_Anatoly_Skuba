@@ -13,6 +13,9 @@ import {
 	Section,
 	Paragraph,
 	LinkProject,
+	SubTitle,
+	WorkList,
+	WorkItem,
 } from "./App.styled";
 import photo from "assets/myPhoto.JPG";
 
@@ -154,18 +157,18 @@ function App() {
 				</List>
 				<Title>SOFT SKILLS</Title>
 				<List>
-					<Item>Punctual</Item>
-					<Item>Reliable</Item>
-					<Item>Teamwork</Item>
-					<Item>Flexible</Item>
-					<Item>Research</Item>
-					<Item>Creativity</Item>
+					<Item>Punctual,</Item>
+					<Item>Reliable,</Item>
+					<Item>Teamwork,</Item>
+					<Item>Flexible,</Item>
+					<Item>Research,</Item>
+					<Item>Creativity,</Item>
 					<Item>Work ethic</Item>
 				</List>
 				<Title>Languages</Title>
 				<List>
-					<Item>English - Intermediate</Item>
-					<Item>Ukrainian - Native</Item>
+					<Item>English - Intermediate,</Item>
+					<Item>Ukrainian - Native,</Item>
 					<Item>Russian - Native</Item>
 				</List>
 			</Container>
@@ -212,7 +215,34 @@ function App() {
 						<LinkProject href="https://github.com/AnatoliiSkuba/Phonebook">Link</LinkProject> (React, JavaScript, Redux,
 						RTK Query, React Router Dom v6, Material-UI). Application for storing phone numbers.
 					</li>
+					<li>
+						<LinkProject href="https://anatoliiskuba.github.io/MyFantasy/">My Fantasy</LinkProject>,&nbsp;
+						<LinkProject href="https://github.com/AnatoliiSkuba/MyFantasy">Link</LinkProject> (TypeScript, Phaser 3,
+						Webpack). HTML5 game adapted for mobile devices.
+					</li>
+					<li>
+						<LinkProject href="https://anatoliiskuba.github.io/Filmoteka/">Filmoteka</LinkProject>,&nbsp;
+						<LinkProject href="https://github.com/AnatoliiSkuba/Filmoteka">Link</LinkProject> (JavaScript, HTML, SASS).
+						Short-term team project. A web application that uses the Movie Database REST API.
+					</li>
 				</ul>
+				<Title>WORK EXPERIENCE</Title>
+				<SubTitle>
+					Founder of the network for the provision of photo services and the manufacture of duplicate keys.
+					Photomir.in.ua | 2009-2022
+					<WorkList>
+						<WorkItem>site development: HTML, CSS</WorkItem>
+						<WorkItem>photoshop design</WorkItem>
+						<WorkItem>interview and hiring of employees</WorkItem>
+					</WorkList>
+					Achievement: I created a self-employed business, created a website
+				</SubTitle>
+				<Title>EDUCATION</Title>
+				<SubTitle>National State Tax Service University of Ukraine</SubTitle>
+				<Title>ADDITIONAL EDUCATION</Title>
+				<SubTitle>IT School GoIT (Kyiv) | 2021-2022</SubTitle>
+				<Paragraph>Full Stack Developer (React + Node)</Paragraph>
+				<SubTitle>American English Center | 2021-2022</SubTitle>
 			</Section>
 		</>
 	);

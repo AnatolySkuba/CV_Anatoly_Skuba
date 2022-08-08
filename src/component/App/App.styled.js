@@ -15,59 +15,27 @@ export const Container = styled.div`
 export const Name = styled.h1`
 	padding: 5vw;
 	text-align: center;
-
-	@media screen and (min-width: 1300px) {
-		display: flex;
-		flex-direction: column;
-		width: 35%;
-		height: 100%;
-		background-color: #e9f0f8;
-	}
+	color: var(--accent-color);
 `;
 
 export const Profession = styled.p`
 	margin-bottom: 4.5vw;
 	text-align: center;
-
-	@media screen and (min-width: 1300px) {
-		display: flex;
-		flex-direction: column;
-		width: 35%;
-		height: 100%;
-		background-color: #e9f0f8;
-	}
 `;
 
 export const Img = styled.img`
 	width: 100vw;
 	object-fit: contain;
-
-	@media screen and (min-width: 1300px) {
-		margin-top: 30px;
-		width: 80%;
-		align-self: center;
-		object-fit: contain;
-	}
 `;
 
 export const Title = styled.h2`
 	padding: 4.5vw 5.5vw 3vw;
 	text-align: center;
 	color: var(--accent-color);
-
-	@media screen and (min-width: 1300px) {
-		margin: 15% 0 5% 10%;
-		font-size: 3vw;
-		color: var(--accent-color);
-	}
 `;
 
 export const List = styled.ul`
 	padding: 0 5.5vw;
-
-	@media screen and (min-width: 1300px) {
-		margin-left: 10%;
-	}
 `;
 
 export const Item = styled.li`
@@ -77,10 +45,6 @@ export const Item = styled.li`
 	&: not(: last-child) {
 		margin-right: 3vw;
 		margin-bottom: 2vw;
-	}
-
-	@media screen and (min-width: 1300px) {
-		margin: 1vw 0;
 	}
 `;
 
@@ -101,10 +65,6 @@ export const TechSkill = styled.li`
 	&: not(: last-child) {
 		margin-right: 3vw;
 		margin-bottom: 3vw;
-	}
-
-	@media screen and (min-width: 1300px) {
-		margin: 1vw 0;
 	}
 `;
 
@@ -132,8 +92,19 @@ export const LinkProject = styled.a`
 	color: var(--accent-color);
 	font-weight: 600;
 	text-indent: 5vw;
+`;
 
-	@media screen and (min-width: 1300px) {
-		font-size: 1.8vw;
-	}
+export const SubTitle = styled.p`
+	font-size: 5vw;
+	color: var(--accent-color);
+	font-weight: 500;
+	text-indent: 5vw;
+`;
+
+export const WorkList = styled.ul``;
+
+export const WorkItem = styled.li`
+	margin-left: 5.5vw;
+	text-indent: 0;
+	list-style: disc;
 `;
