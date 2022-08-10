@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/CV_Anatolii_Skuba/static/css/main.ab03c31e.css",
-    "main.js": "/CV_Anatolii_Skuba/static/js/main.a87a4642.js",
+    "main.css": "/CV_Anatolii_Skuba/static/css/main.96d1733d.css",
+    "main.js": "/CV_Anatolii_Skuba/static/js/main.9363d8e8.js",
     "static/media/myPhoto.JPG": "/CV_Anatolii_Skuba/static/media/myPhoto.88142b28f9f38d2142d3.JPG",
     "index.html": "/CV_Anatolii_Skuba/index.html",
-    "main.ab03c31e.css.map": "/CV_Anatolii_Skuba/static/css/main.ab03c31e.css.map",
-    "main.a87a4642.js.map": "/CV_Anatolii_Skuba/static/js/main.a87a4642.js.map"
+    "main.96d1733d.css.map": "/CV_Anatolii_Skuba/static/css/main.96d1733d.css.map",
+    "main.9363d8e8.js.map": "/CV_Anatolii_Skuba/static/js/main.9363d8e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab03c31e.css",
-    "static/js/main.a87a4642.js"
+    "static/css/main.96d1733d.css",
+    "static/js/main.9363d8e8.js"
   ]
 }
