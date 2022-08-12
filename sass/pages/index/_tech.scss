@@ -1,0 +1,27 @@
+.tech__list {
+	text-align: center;
+}
+
+.tech__item {
+	display: inline-block;
+	padding: 4px 6px;
+	height: 32px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgb(220 230 248 / 50%);
+
+	&:not(:last-child) {
+		margin-right: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+.tech__img {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+}
+
+.tech__span {
+	vertical-align: super;
+}

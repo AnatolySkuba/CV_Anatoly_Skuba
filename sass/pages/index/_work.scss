@@ -1,0 +1,8 @@
+.work__item:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.work__item li {
+	margin-left: 35px;
+	list-style: disc;
+}

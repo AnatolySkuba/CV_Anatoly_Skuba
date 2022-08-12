@@ -1,0 +1,42 @@
+.section {
+	padding: 0 8px;
+
+	&--blue {
+		background-color: #e9f0f8;
+
+		@media screen and (min-width: 734px) {
+			display: table;
+			padding: 25px 16px;
+			width: 300px;
+		}
+	}
+
+	&--white {
+		@media screen and (min-width: 734px) {
+			width: 100%;
+			padding: 0 16px;
+		}
+	}
+
+	&__title {
+		padding: 16px;
+		text-align: center;
+		color: $accent-color;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+.section__text {
+	text-indent: 20px;
+
+	&--accent-color {
+		color: $accent-color;
+	}
+
+	&--indent {
+		text-indent: 20px;
+	}
+}

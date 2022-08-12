@@ -1,13 +1,8 @@
-:root {
-	--text-color: #427095;
-	--accent-color: #0e283d;
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: var(--text-color);
+	color: $text-color;
 	list-style-type: none;
 	font-family: "Raleway", sans-serif;
 	font-style: normal;
@@ -27,6 +22,4 @@ html {
 
 body {
 	margin: 0;
-
-	max-width: 1440px;
 }

@@ -1,0 +1,13 @@
+.project__link {
+	font-weight: 600;
+	text-decoration: underline;
+	color: $accent-color;
+
+	&--margin-left {
+		margin-left: 20px;
+	}
+}
+
+.project__item:not(:last-child) {
+	margin-bottom: 8px;
+}
