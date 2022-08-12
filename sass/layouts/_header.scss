@@ -1,8 +1,6 @@
 .header {
-	@media screen and (min-width: 500px) {
-		display: flex;
-		justify-content: space-around;
-	}
+	display: flex;
+	justify-content: space-around;
 
 	@media screen and (min-width: 734px) {
 		display: block;
@@ -15,7 +13,7 @@
 	width: 250px;
 	object-fit: contain;
 
-	@media screen and (min-width: 500px) {
+	@media screen and (min-width: 502px) {
 		display: none;
 	}
 }
@@ -23,10 +21,10 @@
 .header__photo--desktop {
 	display: none;
 
-	@media screen and (min-width: 500px) {
+	@media screen and (min-width: 502px) {
 		display: inline-block;
-		margin-left: -8px;
 		margin-right: 8px;
+		padding-top: 8px;
 		width: 250px;
 		object-fit: contain;
 	}
@@ -40,6 +38,7 @@
 .header__name--mobile {
 	padding: 18px;
 	text-align: center;
+	font-size: 34px;
 	color: $accent-color;
 
 	@media screen and (min-width: 734px) {
@@ -55,8 +54,16 @@
 		margin: 50px -16px 0 -16px;
 		padding: 30px;
 		text-align: center;
+		font-size: 34px;
 		color: $accent-color;
 		background-color: #e9f0f8;
+	}
+
+	@media screen and (min-width: 1080px) {
+		margin-top: 100px;
+		padding-top: 60px;
+		padding-bottom: 40px;
+		font-size: 48px;
 	}
 }
 
@@ -80,15 +87,30 @@
 		font-size: 20px;
 		text-align: center;
 		background-color: #e9f0f8;
+
+		@media screen and (min-width: 1080px) {
+			padding-bottom: 40px;
+			font-size: 30px;
+		}
 	}
 }
 
 address {
 	@media screen and (min-width: 734px) {
-		margin-left: 10px;
+		margin-left: 15px;
 	}
 }
 
 address li:not(:last-child) {
 	margin-bottom: 6px;
+}
+
+address img {
+	vertical-align: top;
+	margin-right: 6px;
+}
+
+address a {
+	text-decoration: underline;
+	color: $accent-color;
 }

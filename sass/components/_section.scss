@@ -9,12 +9,24 @@
 			padding: 25px 16px;
 			width: 300px;
 		}
+
+		h2 {
+			@media (min-width: 734px) and (max-width: 813px) {
+				margin-top: 40px;
+			}
+		}
 	}
 
 	&--white {
 		@media screen and (min-width: 734px) {
 			width: 100%;
 			padding: 0 16px;
+		}
+
+		h2 {
+			@media (min-width: 1280px) {
+				margin-top: 20px;
+			}
 		}
 	}
 
@@ -24,19 +36,38 @@
 		color: $accent-color;
 	}
 
+	&__list {
+		text-indent: 20px;
+		display: none;
+
+		@media screen and (min-width: 734px) {
+			display: block;
+		}
+
+		li {
+			margin-bottom: 8px;
+		}
+	}
+
 	&__item:not(:last-child) {
 		margin-bottom: 8px;
 	}
 }
 
 .section__text {
-	text-indent: 20px;
-
 	&--accent-color {
 		color: $accent-color;
 	}
 
 	&--indent {
 		text-indent: 20px;
+	}
+
+	&--hidden {
+		text-indent: 20px;
+
+		@media screen and (min-width: 734px) {
+			display: none;
+		}
 	}
 }
