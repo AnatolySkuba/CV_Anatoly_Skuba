@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-around;
 
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		display: block;
 	}
 }
@@ -13,7 +13,7 @@
 	width: 250px;
 	object-fit: contain;
 
-	@media screen and (min-width: 502px) {
+	@media (min-width: 502px) {
 		display: none;
 	}
 }
@@ -21,7 +21,7 @@
 .header__photo--desktop {
 	display: none;
 
-	@media screen and (min-width: 502px) {
+	@media (min-width: 502px) {
 		display: inline-block;
 		margin-right: 8px;
 		padding-top: 8px;
@@ -29,7 +29,7 @@
 		object-fit: contain;
 	}
 
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		display: table;
 		margin: 0 auto;
 	}
@@ -41,7 +41,7 @@
 	font-size: 34px;
 	color: $accent-color;
 
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		display: none;
 	}
 }
@@ -49,7 +49,7 @@
 .header__name--desktop {
 	display: none;
 
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		display: block;
 		margin: 50px -16px 0 -16px;
 		padding: 30px;
@@ -59,7 +59,7 @@
 		background-color: #e9f0f8;
 	}
 
-	@media screen and (min-width: 1080px) {
+	@media (min-width: 1080px) {
 		margin-top: 100px;
 		padding-top: 60px;
 		padding-bottom: 40px;
@@ -72,7 +72,7 @@
 	font-size: 20px;
 	text-align: center;
 
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		display: none;
 	}
 }
@@ -80,7 +80,7 @@
 .header__profession--desktop {
 	display: none;
 
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		display: block;
 		margin: 0 -16px;
 		padding-bottom: 20px;
@@ -88,7 +88,7 @@
 		text-align: center;
 		background-color: #e9f0f8;
 
-		@media screen and (min-width: 1080px) {
+		@media (min-width: 1080px) {
 			padding-bottom: 40px;
 			font-size: 30px;
 		}
@@ -96,7 +96,7 @@
 }
 
 address {
-	@media screen and (min-width: 734px) {
+	@media (min-width: 734px) {
 		margin-left: 15px;
 	}
 }

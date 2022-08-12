@@ -4,7 +4,7 @@
 	&--blue {
 		background-color: #e9f0f8;
 
-		@media screen and (min-width: 734px) {
+		@media (min-width: 734px) {
 			display: table;
 			padding: 25px 16px;
 			width: 300px;
@@ -20,7 +20,7 @@
 	&--white {
 		padding-bottom: 8px;
 
-		@media screen and (min-width: 734px) {
+		@media (min-width: 734px) {
 			width: 100%;
 			padding: 0 16px;
 		}
@@ -42,7 +42,7 @@
 		text-indent: 20px;
 		display: none;
 
-		@media screen and (min-width: 734px) {
+		@media (min-width: 734px) {
 			display: block;
 		}
 
@@ -68,7 +68,7 @@
 	&--hidden {
 		text-indent: 20px;
 
-		@media screen and (min-width: 734px) {
+		@media (min-width: 734px) {
 			display: none;
 		}
 	}
