@@ -18,7 +18,7 @@
 	}
 
 	&--white {
-		padding-bottom: 8px;
+		padding-bottom: 16px;
 
 		@media (min-width: 768px) {
 			width: 100%;
@@ -26,8 +26,8 @@
 		}
 
 		h2 {
-			@media (min-width: 1366px) {
-				margin-top: 20px;
+			@media (min-width: 1322px) {
+				margin-top: 10px;
 			}
 		}
 	}
