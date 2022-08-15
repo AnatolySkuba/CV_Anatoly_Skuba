@@ -4,14 +4,14 @@
 	&--blue {
 		background-color: #e9f0f8;
 
-		@media (min-width: 734px) {
+		@media (min-width: 768px) {
 			display: table;
 			padding: 25px 16px;
 			width: 300px;
 		}
 
 		h2 {
-			@media (min-width: 734px) and (max-width: 813px) {
+			@media (min-width: 768px) and (max-width: 895px) {
 				margin-top: 40px;
 			}
 		}
@@ -20,13 +20,13 @@
 	&--white {
 		padding-bottom: 8px;
 
-		@media (min-width: 734px) {
+		@media (min-width: 768px) {
 			width: 100%;
 			padding: 0 16px;
 		}
 
 		h2 {
-			@media (min-width: 1280px) {
+			@media (min-width: 1366px) {
 				margin-top: 20px;
 			}
 		}
@@ -42,7 +42,7 @@
 		text-indent: 20px;
 		display: none;
 
-		@media (min-width: 734px) {
+		@media (min-width: 768px) {
 			display: block;
 		}
 
@@ -68,7 +68,7 @@
 	&--hidden {
 		text-indent: 20px;
 
-		@media (min-width: 734px) {
+		@media (min-width: 768px) {
 			display: none;
 		}
 	}
