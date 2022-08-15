@@ -3,8 +3,9 @@
 	justify-content: space-around;
 
 	@media (min-width: 768px) {
+		// delete for PDF, scale 77, borderless
 		display: block;
-	}
+	} // delete for PDF, scale 77, borderless
 }
 
 .header__photo--mobile {
@@ -42,14 +43,16 @@
 	color: $accent-color;
 
 	@media (min-width: 768px) {
+		// delete for PDF, scale 77, borderless
 		display: none;
-	}
+	} // delete for PDF, scale 77, borderless
 }
 
 .header__name--desktop {
 	display: none;
 
 	@media (min-width: 768px) {
+		// delete for PDF, scale 77, borderless
 		display: block;
 		margin: 50px -16px 0 -16px;
 		padding: 30px;
@@ -57,14 +60,15 @@
 		font-size: 34px;
 		color: $accent-color;
 		background-color: #e9f0f8;
-	}
+	} // delete for PDF, scale 77, borderless
 
 	@media (min-width: 1168px) {
+		// delete for PDF, scale 77, borderless
 		margin-top: 100px;
 		padding-top: 60px;
 		padding-bottom: 40px;
 		font-size: 48px;
-	}
+	} // delete for PDF, scale 77, borderless
 }
 
 .header__profession--mobile {
@@ -73,26 +77,29 @@
 	text-align: center;
 
 	@media (min-width: 768px) {
+		// delete for PDF, scale 77, borderless
 		display: none;
-	}
+	} // delete for PDF, scale 77, borderless
 }
 
 .header__profession--desktop {
 	display: none;
 
 	@media (min-width: 768px) {
+		// delete for PDF, scale 77, borderless
 		display: block;
 		margin: 0 -16px;
 		padding-bottom: 20px;
 		font-size: 20px;
 		text-align: center;
 		background-color: #e9f0f8;
+	} // delete for PDF, scale 77, borderless
 
-		@media (min-width: 1168px) {
-			padding-bottom: 40px;
-			font-size: 30px;
-		}
-	}
+	@media (min-width: 1168px) {
+		// delete for PDF, scale 77, borderless
+		padding-bottom: 40px;
+		font-size: 30px;
+	} // delete for PDF, scale 77, borderless
 }
 
 address {

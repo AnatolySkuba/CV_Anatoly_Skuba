@@ -5,10 +5,11 @@
 		background-color: #e9f0f8;
 
 		@media (min-width: 768px) {
+			// delete for PDF, scale 77, borderless
 			display: table;
 			padding: 25px 16px;
 			width: 300px;
-		}
+		} // delete for PDF, scale 77, borderless
 
 		h2 {
 			@media (min-width: 768px) and (max-width: 895px) {
@@ -27,8 +28,9 @@
 
 		h2 {
 			@media (min-width: 1322px) {
+				// delete for PDF, scale 77, borderless
 				margin-top: 10px;
-			}
+			} // delete for PDF, scale 77, borderless
 		}
 	}
 
