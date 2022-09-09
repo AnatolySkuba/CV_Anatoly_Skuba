@@ -1,77 +1,78 @@
 .section {
-	padding: 0 8px;
+    padding: 0 8px;
 
-	&--blue {
-		background-color: #e9f0f8;
+    &--blue {
+        background-color: #e9f0f8;
 
-		@media (min-width: 768px) {
-			// delete for PDF, scale 77, borderless
-			display: table;
-			padding: 25px 16px;
-			width: 300px;
-		} // delete for PDF, scale 77, borderless
+        @media (min-width: 768px) {
+            // delete for PDF, scale 77, borderless
+            display: table;
+            padding: 25px 16px;
+            width: 300px;
+            appearance: auto;
+        } // delete for PDF, scale 77, borderless
 
-		h2 {
-			@media (min-width: 768px) and (max-width: 895px) {
-				margin-top: 40px;
-			}
-		}
-	}
+        h2 {
+            @media (min-width: 768px) and (max-width: 895px) {
+                margin-top: 40px;
+            }
+        }
+    }
 
-	&--white {
-		padding-bottom: 16px;
+    &--white {
+        padding-bottom: 16px;
 
-		@media (min-width: 768px) {
-			width: 100%;
-			padding: 0 16px;
-		}
+        @media (min-width: 768px) {
+            width: 100%;
+            padding: 0 16px;
+        }
 
-		h2 {
-			@media (min-width: 1322px) {
-				// delete for PDF, scale 77, borderless
-				margin-top: 10px;
-			} // delete for PDF, scale 77, borderless
-		}
-	}
+        h2 {
+            @media (min-width: 1322px) {
+                // delete for PDF, scale 77, borderless
+                margin-top: 10px;
+            } // delete for PDF, scale 77, borderless
+        }
+    }
 
-	&__title {
-		padding: 16px;
-		text-align: center;
-		color: $accent-color;
-	}
+    &__title {
+        padding: 16px;
+        text-align: center;
+        color: $accent-color;
+    }
 
-	&__list {
-		text-indent: 20px;
-		display: none;
+    &__list {
+        text-indent: 20px;
+        display: none;
 
-		@media (min-width: 768px) {
-			display: block;
-		}
+        @media (min-width: 768px) {
+            display: block;
+        }
 
-		li {
-			margin-bottom: 8px;
-		}
-	}
+        li {
+            margin-bottom: 8px;
+        }
+    }
 
-	&__item:not(:last-child) {
-		margin-bottom: 8px;
-	}
+    &__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
 }
 
 .section__text {
-	&--accent-color {
-		color: $accent-color;
-	}
+    &--accent-color {
+        color: $accent-color;
+    }
 
-	&--indent {
-		text-indent: 20px;
-	}
+    &--indent {
+        text-indent: 20px;
+    }
 
-	&--hidden {
-		text-indent: 20px;
+    &--hidden {
+        text-indent: 20px;
 
-		@media (min-width: 768px) {
-			display: none;
-		}
-	}
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
 }
