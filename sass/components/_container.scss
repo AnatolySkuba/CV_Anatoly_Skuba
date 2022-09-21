@@ -1,11 +1,10 @@
 .container {
-	@media (min-width: 768px) {
-		// delete for PDF, scale 77, borderless
-		display: flex;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 768px) {
+        display: flex;
+    }
 
-	@media (min-width: 1366px) {
-		width: 1366px;
-		margin: 0 auto;
-	}
+    @media (min-width: 1366px) {
+        width: 1366px;
+        margin: 0 auto;
+    }
 }

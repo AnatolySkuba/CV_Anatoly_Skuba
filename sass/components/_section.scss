@@ -5,8 +5,8 @@
         background-color: #e9f0f8;
         @media (min-width: 768px) {
             padding: 25px 16px;
-            width: 400px;
-        } // delete for PDF, scale 77, borderless
+            width: 300px;
+        }
 
         h2 {
             @media (min-width: 768px) and (max-width: 895px) {
@@ -16,6 +16,7 @@
     }
 
     &--white {
+        margin-top: 50px;
         padding-bottom: 16px;
 
         @media (min-width: 768px) {
@@ -25,9 +26,8 @@
 
         h2 {
             @media (min-width: 1322px) {
-                // delete for PDF, scale 77, borderless
                 margin-top: 10px;
-            } // delete for PDF, scale 77, borderless
+            }
         }
     }
 
@@ -53,6 +53,10 @@
     &__item:not(:last-child) {
         margin-bottom: 8px;
     }
+}
+
+.section__item {
+    display: contents;
 }
 
 .section__text {

@@ -1,123 +1,112 @@
 .header {
-	display: flex;
-	justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 
-	@media (min-width: 768px) {
-		// delete for PDF, scale 77, borderless
-		display: block;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 768px) {
+        // margin-top: 30px; // for PDF, scale 77, borderless
+        display: block;
+    }
 }
 
 .header__photo--mobile {
-	display: flex;
-	margin: 0 auto;
-	width: 250px;
-	object-fit: contain;
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    object-fit: contain;
 
-	@media (min-width: 502px) {
-		display: none;
-	}
+    @media (min-width: 502px) {
+        display: none;
+    }
 }
 
 .header__photo--desktop {
-	display: none;
+    display: none;
 
-	@media (min-width: 502px) {
-		display: inline-block;
-		margin-right: 8px;
-		padding-top: 8px;
-		width: 250px;
-		object-fit: contain;
-	}
+    @media (min-width: 502px) {
+        display: inline-block;
+        margin-right: 8px;
+        padding-top: 8px;
+        width: 250px;
+        object-fit: contain;
+    }
 
-	@media (min-width: 768px) {
-		display: table;
-		margin: 0 auto;
-	}
+    @media (min-width: 768px) {
+        display: table;
+        margin: 0 auto;
+    }
 }
 
 .header__name--mobile {
-	padding: 18px;
-	text-align: center;
-	font-size: 34px;
-	color: $accent-color;
+    padding: 18px;
+    text-align: center;
+    font-size: 34px;
+    color: $accent-color;
 
-	@media (min-width: 768px) {
-		// delete for PDF, scale 77, borderless
-		display: none;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .header__name--desktop {
-	display: none;
+    display: none;
 
-	@media (min-width: 768px) {
-		// delete for PDF, scale 77, borderless
-		display: block;
-		margin: 50px -16px 0 -16px;
-		padding: 30px;
-		text-align: center;
-		font-size: 34px;
-		color: $accent-color;
-		background-color: #e9f0f8;
-	} // delete for PDF, scale 77, borderless
-
-	@media (min-width: 1168px) {
-		// delete for PDF, scale 77, borderless
-		margin-top: 100px;
-		padding-top: 60px;
-		padding-bottom: 40px;
-		font-size: 48px;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 768px) {
+        display: block;
+        margin: 50px -16px 0 -16px;
+        padding: 30px;
+        // padding-top: 60px; // for PDF, scale 77, borderless
+        text-align: center;
+        font-size: 34px;
+        color: $accent-color;
+        background-color: #e9f0f8;
+    }
 }
 
 .header__profession--mobile {
-	margin-bottom: 16px;
-	font-size: 20px;
-	text-align: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+    text-align: center;
 
-	@media (min-width: 768px) {
-		// delete for PDF, scale 77, borderless
-		display: none;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .header__profession--desktop {
-	display: none;
+    display: none;
 
-	@media (min-width: 768px) {
-		// delete for PDF, scale 77, borderless
-		display: block;
-		margin: 0 -16px;
-		padding-bottom: 20px;
-		font-size: 20px;
-		text-align: center;
-		background-color: #e9f0f8;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 768px) {
+        display: block;
+        margin: 0 -16px;
+        padding-bottom: 20px;
+        // padding-bottom: 60px; // for PDF, scale 77, borderless
+        font-size: 20px;
+        text-align: center;
+        background-color: #e9f0f8;
+    }
 
-	@media (min-width: 1168px) {
-		// delete for PDF, scale 77, borderless
-		padding-bottom: 40px;
-		font-size: 30px;
-	} // delete for PDF, scale 77, borderless
+    @media (min-width: 1168px) {
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
 }
 
 address {
-	@media (min-width: 768px) {
-		margin-left: 15px;
-	}
+    @media (min-width: 768px) {
+        margin-left: 15px;
+    }
 }
 
 address li:not(:last-child) {
-	margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 address img {
-	vertical-align: top;
-	margin-right: 6px;
+    vertical-align: top;
+    margin-right: 6px;
 }
 
 address a {
-	text-decoration: underline;
-	color: $accent-color;
+    text-decoration: underline;
+    color: $accent-color;
 }
