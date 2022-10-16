@@ -52,7 +52,7 @@
 
     @media (min-width: 768px) {
         display: block;
-        margin: 50px -16px 0 -16px;
+        margin: 50px -16px 0 -16px; // margin: 20px -16px 0 -16px; for PDF, scale 77, borderless
         padding: 30px;
         // padding-top: 60px; // for PDF, scale 77, borderless
         text-align: center;
