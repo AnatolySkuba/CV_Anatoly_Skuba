@@ -15,6 +15,12 @@
     box-sizing: border-box;
 }
 
+.resume,
+.resume * {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
 html {
     font-size: 16px;
 }
@@ -554,37 +560,59 @@ a:focus-visible {
     }
 }
 
-/* Balanced one-page print layout: larger text, visible AI workflow and full-height columns. */
+/* Readable one-page print layout with the approved condensed copy. */
 @media print {
-    html { font-size: 8.45pt; }
-    body { line-height: 1.32; }
+    html { font-size: 9.25pt; }
+    body { line-height: 1.28; }
     .resume {
         min-height: 296.8mm;
         display: flex;
         flex-direction: column;
         border-bottom: 0.7mm solid var(--accent);
     }
-    .resume__grid { flex: 1; }
-    .identity__value { font-size: 7.5pt; }
-    .contact { font-size: 7.1pt; }
-    .sidebar { padding: 4.5mm 4mm 7mm; }
-    .sidebar__section + .sidebar__section { margin-top: 3.4mm; }
-    .sidebar h2, .content__section > h2 { font-size: 7.4pt; margin-bottom: 1.6mm; }
-    .sidebar p, .sidebar ul { font-size: 7.3pt; line-height: 1.34; }
-    .sidebar .ai-tools { margin-top: 1.3mm; font-size: 7pt; color: var(--muted); }
+    .resume__grid {
+        flex: 1;
+        grid-template-columns: 52mm minmax(0, 1fr);
+    }
+    .identity__value { font-size: 7.8pt; }
+    .contact { font-size: 7.5pt; }
+    .sidebar { padding: 4.5mm 4mm 6mm; }
+    .sidebar__section + .sidebar__section { margin-top: 3.2mm; }
+    .sidebar h2, .content__section > h2 { font-size: 8pt; margin-bottom: 1.6mm; }
+    .sidebar p, .sidebar ul { font-size: 8pt; line-height: 1.3; }
+    .sidebar .ai-tools { margin-top: 1.3mm; font-size: 7.6pt; color: var(--muted); }
     .content {
-        padding: 4.5mm 6mm 5mm;
+        padding: 4.5mm 5mm 5.5mm;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .content p, .content li { color: #24364b; }
-    .content__section + .content__section { margin-top: 3.6mm; }
+    .content p, .content li { color: #24364b; text-wrap: pretty; }
+    .content__section + .content__section { margin-top: 3.4mm; }
     .summary p + p { margin-top: 1.5mm; }
+    .impact__item { min-height: 13.5mm; }
+    .impact__item strong { font-size: 10pt; }
+    .impact__item span { font-size: 6.8pt; }
+    .role h3, .project h3, .education h3 { font-size: 10pt; }
     .role ul { padding-left: 1.1rem; }
     .role li { list-style-type: disc; }
-    .role li + li { margin-top: 0.9mm; }
-    .role__company, .role__date, .project p, .education p { font-size: 7.3pt; }
+    .role li + li { margin-top: 0.8mm; }
+    .role__company, .role__date { font-size: 8pt; }
+    .project p, .education p { font-size: 8.2pt; }
     .role + .role { margin-top: 2.4mm; padding-top: 2mm; }
-    .education__item + .education__item { margin-top: 1.7mm; }
+    .role--compact .role__heading { align-items: baseline; }
+    .role--compact .role__heading > div {
+        display: flex;
+        align-items: baseline;
+        gap: 2mm;
+    }
+    .role--compact .role__heading p { margin: 0; }
+    .role--compact .role__company::before { content: "· "; font-weight: 400; }
+    .role--compact > p:last-child { margin-top: 1.2mm; }
+    .education__item + .education__item { margin-top: 1.5mm; }
+}
+
+/* Keep the complete main positioning readable on one line in print. */
+@media print {
+    .identity__eyebrow { font-size: 7.1pt; letter-spacing: 0.07em; }
 }
